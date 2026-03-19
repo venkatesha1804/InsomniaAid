@@ -1,0 +1,22 @@
+InsomniAid Project: Work Done So Far
+Data Collection: Gathered diverse, real-world sleep data from two authoritative sources (Sleep-EDF and ISRUC), providing many PSG records from different individuals.
+
+Data Harmonization: Standardized and unified both datasets using custom scripts so that all records shared the same structure, enabling combined analysis.
+
+Feature Extraction: Engineered over 50 sleep-related features per subject, going beyond raw values to include metrics like sleep onset latency, sleep efficiency, REM latency, time in each sleep stage, and more.
+
+Clinical Labeling: Applied clinical criteria to assign each subject an insomnia severity label (No Insomnia, Mild, Moderate, Severe), creating the necessary “ground truth” for supervised machine learning.
+
+Data Splitting: Split the dataset into training (80%) and testing (20%) sets, ensuring that model performance would be fairly and realistically measured.
+
+Modeling: Trained a Random Forest classifier to predict insomnia severity, achieving high performance (92.4% accuracy) on the test data.
+
+Feature Analysis: Identified which features were most important for predicting insomnia, providing clinical insight and model interpretability.
+
+Web Application: Built a demo web app (e.g., using Streamlit) to allow users to log in, upload PSG and hypnogram files, and receive instant severity classification—all in a user-friendly, interactive format.
+
+User Management: Incorporated a basic authentication system with login and registration for multiple users and privacy.
+
+Automated Processing: Enabled real-time file processing—on file upload, the app extracts features, normalizes data, and generates a prediction immediately.
+
+Reporting & Demo Readiness: Designed the workflow and application for live demonstration, showing the end-to-end process from data upload to prediction.

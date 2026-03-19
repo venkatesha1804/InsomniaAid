@@ -1,0 +1,15 @@
+notepad .gitignore
+```
+
+Paste this and save:
+```
+streamlit_app/.venv/
+__pycache__/
+*.pyc
+.env
+*.db
+.streamlit/secrets.toml
+*.joblib
+ISRUC_Dataset/
+sleep-edf-data/
+sample/
