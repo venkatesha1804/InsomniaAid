@@ -13,50 +13,53 @@ DB_PATH     = os.path.join(BASE_DIR, 'users.db')
 
 os.makedirs(UPLOADS_DIR, exist_ok=True)
 
-# ─── Modern Elegant Theme ────────────────────────────────────
+# ─── Clinical / Healthcare Theme ─────────────────────────────
 COLORS = {
-    # Primary colors - Modern teal/emerald palette
-    'primary':         '#10B981',      # Emerald green
-    'primary_dark':    '#059669',      # Darker emerald
-    'primary_light':   '#D1FAE5',      # Very light emerald
-    'accent':          '#06B6D4',      # Cyan accent
-    
+    # Primary colors
+    'primary':         '#16233F',      # Deep navy
+    'primary_dark':    '#0E1830',      # Darker navy (hover)
+    'primary_light':   '#EBF1F9',      # Very light soft-blue tint
+    'primary_mid':     '#2A4270',      # Mid navy (gradients)
+    'accent':          '#0EA5A0',      # Teal
+    'accent_dark':     '#0B7F7B',
+    'secondary':       '#4A7BA6',      # Soft blue
+
     # Backgrounds
-    'bg':              'linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%)',  # Soft gradient
-    'card':            '#FFFFFF',      # Pure white cards
-    'input_bg':        '#F9FAFB',      # Light input background
-    
+    'bg':              '#F3F6FB',      # Very light blue-gray
+    'card':            '#FFFFFF',
+    'input_bg':        '#F8FAFC',
+
     # Borders and dividers
-    'border':          '#E5E7EB',      # Soft gray border
-    
+    'border':          '#E4E9F1',
+
     # Text colors
-    'text_main':       '#111827',      # Almost black
-    'text_body':       '#374151',      # Dark gray
-    'text_muted':      '#9CA3AF',      # Medium gray
-    
+    'text_main':       '#161D2C',
+    'text_body':       '#404A5E',
+    'text_muted':      '#7C889D',
+
     # Status colors
-    'success':         '#10B981',
-    'success_bg':      '#D1FAE5',
-    'warning':         '#F59E0B',
+    'success':         '#15803D',
+    'success_bg':      '#DCFCE7',
+    'warning':         '#B45309',
     'warning_bg':      '#FEF3C7',
-    'danger':          '#EF4444',
+    'danger':          '#B91C1C',
     'danger_bg':       '#FEE2E2',
-    'info':            '#3B82F6',
+    'info':            '#1D4ED8',
     'info_bg':         '#DBEAFE',
 }
 
 SEVERITY_COLORS = {
-    'No Insomnia': '#10B981',  # Green
-    'Mild':        '#F59E0B',  # Amber
-    'Moderate':    '#F97316',  # Orange
-    'Severe':      '#EF4444',  # Red
+    'No Insomnia': '#15803D',
+    'Mild':        '#B45309',
+    'Moderate':    '#C2410C',
+    'Severe':      '#B91C1C',
 }
 
 SEVERITY_BG = {
-    'No Insomnia': '#D1FAE5',  # Light green
-    'Mild':        '#FEF3C7',  # Light amber
-    'Moderate':    '#FFEDD5',  # Light orange
-    'Severe':      '#FEE2E2',  # Light red
+    'No Insomnia': '#DCFCE7',
+    'Mild':        '#FEF3C7',
+    'Moderate':    '#FFEDD5',
+    'Severe':      '#FEE2E2',
 }
 
 # ─── Chatbot Knowledge Base ──────────────────────────────────
